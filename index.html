@@ -29,12 +29,12 @@
 
     <nav id="sideNav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" alt="menu" id="menuBtn" >
@@ -228,6 +228,8 @@
     <script>
         let menuBtn = document.getElementById("menuBtn");
         let sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
 
         menuBtn.onclick = () => {
             if(sideNav.style.right == "-250px"){

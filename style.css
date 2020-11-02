@@ -104,6 +104,11 @@ nav ul li a {
     color: #fff;
 }
 
+nav ul li a:hover {
+    color: #ffccff;
+    border-bottom:1px solid #ffccff;
+}
+
 #menuBtn {
     width: 50px;
     position: fixed;
@@ -364,6 +369,9 @@ hr {
 /*    display mobile      */
 
 @media only screen and (max-width: 770px){
+
+    /*------HEADER--------*/
+
     #header {
         background-image: none;
     }
@@ -392,5 +400,62 @@ hr {
 
     .common-btn {
         padding: 10px 10px;
+    }
+
+    .social-icons img {
+        width: 14px;
+        margin: 15px auto;
+    }
+
+    /*-------ABOUT-------*/
+
+    .about-left-col, .about-right-col {
+        flex-basis: 100%;
+    }
+
+    .about-text {
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    
+    .about-text h2 {
+        font-size: 18px;
+    }
+    
+    .features-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*------COURSE--------*/
+
+    .course-right-col {
+        flex: 100%;
+        margin-top: 70px;
+    }
+    
+    .course-right-col img {
+        width: 100%;
+    }
+    
+    .course-left-col {
+        flex: 100%;
+    }
+
+    /*-----CONTACT------*/
+
+    .contact-right-col {
+        margin-top: 50px;
+    }
+
+    /*-----FOOTER-----*/
+
+    .footer-left-col,.footer-right-col {
+        flex-basis: 100%;
+    }
+
+    .link-title {
+        flex-basis: 50%;
+        margin-bottom: 30px;
     }
 }
